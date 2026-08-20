@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Greg Sollenberger is a property and casualty actuary and predictive modeler.\nHe has worked in insurance since 2008 and has been a Fellow of the Casualty Actuarial Society (FCAS) since 2014. He is also a Certified Specialist in Predictive Analytics (CSPA) and holds a master’s degree in Physics from The Ohio State University.\nHis experience includes several years in insurance pricing and more than a decade building predictive models for auto and homeowners insurance.\nThat work has included:\n\nGLMs and gradient-boosted models for homeowners and auto class plans\nInsurance pricing and segmentation\nRetention modeling\nPortfolio profitability analysis integrating pricing and retention models\nModel review and documentation\nTranslating analytical models into usable rating and business workflows"
+  },
+  {
+    "objectID": "about.html#greg-sollenberger",
+    "href": "about.html#greg-sollenberger",
+    "title": "About",
+    "section": "",
+    "text": "Greg Sollenberger is a property and casualty actuary and predictive modeler.\nHe has worked in insurance since 2008 and has been a Fellow of the Casualty Actuarial Society (FCAS) since 2014. He is also a Certified Specialist in Predictive Analytics (CSPA) and holds a master’s degree in Physics from The Ohio State University.\nHis experience includes several years in insurance pricing and more than a decade building predictive models for auto and homeowners insurance.\nThat work has included:\n\nGLMs and gradient-boosted models for homeowners and auto class plans\nInsurance pricing and segmentation\nRetention modeling\nPortfolio profitability analysis integrating pricing and retention models\nModel review and documentation\nTranslating analytical models into usable rating and business workflows"
+  },
+  {
+    "objectID": "about.html#sollenberger-actuarial-technologies",
+    "href": "about.html#sollenberger-actuarial-technologies",
+    "title": "About",
+    "section": "Sollenberger Actuarial Technologies",
+    "text": "Sollenberger Actuarial Technologies\nSollenberger Actuarial Technologies is a vehicle for publishing actuarial software, technical demonstrations, and related work.\nThe emphasis is on practical tools that make sophisticated actuarial workflows easier to understand, reproduce, review, and implement."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "This page collects open-source R tools developed under Sollenberger Actuarial Technologies."
+  },
+  {
+    "objectID": "software.html#ratingtables",
+    "href": "software.html#ratingtables",
+    "title": "Software",
+    "section": "ratingtables",
+    "text": "ratingtables\nratingtables provides tools for transparent, reproducible insurance rating workflows.\nThe package is intended for actuaries and analysts who need to move between human-readable rating tables and programmatic rating processes without hiding the mechanics of the calculation.\n\nAreas of functionality\n\nLong-form factor tables\nBatch rating\nRating traces\nValidation\nCoverage-specific specifications\nInteractions\nContinuous rating variables\nCustom rating functions\nImplementation-oriented workflows\n\nCRAN package page\n\nGitHub repository"
+  },
+  {
+    "objectID": "software.html#additional-projects",
+    "href": "software.html#additional-projects",
+    "title": "Software",
+    "section": "Additional projects",
+    "text": "Additional projects\nMore actuarial and modeling tools will be added here as they are released."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Questions about the software, technical feedback, and conversations about actuarial modeling or implementation problems are welcome.\nIf you are working through an interesting pricing, modeling, rating, or actuarial technology problem and think my background may be relevant, feel free to reach out.\nEmail: your-email@sollenbergeractuarial.com\n\nGitHub: github.com/your-profile\nLinkedIn: LinkedIn profile"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "Notes",
+    "section": "",
+    "text": "This section is intended for technical notes, demonstrations, package walkthroughs, and other material related to actuarial modeling and software."
+  },
+  {
+    "objectID": "notes.html#planned-topics",
+    "href": "notes.html#planned-topics",
+    "title": "Notes",
+    "section": "Planned topics",
+    "text": "Planned topics\n\nWorked examples using ratingtables\nRating-table workflow design\nMoving between models and production rating structures\nPredictive modeling implementation\nR and Excel interoperability for actuarial workflows\nModel transparency and reproducibility"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "",
+    "text": "Sollenberger Actuarial Technologies is a home for open-source software and technical work related to insurance rating, predictive modeling, and actuarial workflows.\nThe focus is practical: tools that make actuarial work more transparent, reproducible, and easier to move between analytical and production environments."
+  },
+  {
+    "objectID": "index.html#actuarial-software-modeling-and-technical-work",
+    "href": "index.html#actuarial-software-modeling-and-technical-work",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "",
+    "text": "Sollenberger Actuarial Technologies is a home for open-source software and technical work related to insurance rating, predictive modeling, and actuarial workflows.\nThe focus is practical: tools that make actuarial work more transparent, reproducible, and easier to move between analytical and production environments."
+  },
+  {
+    "objectID": "index.html#featured-software",
+    "href": "index.html#featured-software",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "Featured software",
+    "text": "Featured software\n\nratingtables\nratingtables is an R package for building transparent and reproducible insurance rating workflows from long-form factor tables.\nIt is designed around practical rating needs, including batch rating, traceability, validation, coverage-specific logic, interactions, custom functions, and implementation-oriented workflows.\nView on CRAN\n\nView source on GitHub"
+  },
+  {
+    "objectID": "index.html#areas-of-interest",
+    "href": "index.html#areas-of-interest",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "Areas of interest",
+    "text": "Areas of interest\n\nInsurance pricing and class plan modeling\nGLMs and gradient-boosted models\nRating implementation and rating-table workflows\nRetention modeling\nPortfolio profitability analysis integrating pricing and retention models\nModel review, documentation, and reproducibility\nTools that help bridge R-based analytical workflows with business-facing processes"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "About",
+    "text": "About\nGreg Sollenberger is a Fellow of the Casualty Actuarial Society (FCAS) and a Certified Specialist in Predictive Analytics (CSPA). He has worked in insurance since 2008 and has more than a decade of experience building predictive models for personal lines insurance.\nMore about Greg"
+  },
+  {
+    "objectID": "index.html#get-in-touch",
+    "href": "index.html#get-in-touch",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "Get in touch",
+    "text": "Get in touch\nQuestions, feedback, ideas for the software, and conversations about related actuarial or technical problems are welcome.\nContact"
+  },
+  {
+    "objectID": "about.html#greg-sollenberger-fcas-cspa",
+    "href": "about.html#greg-sollenberger-fcas-cspa",
+    "title": "About",
+    "section": "",
+    "text": "Greg Sollenberger is a property and casualty actuary and predictive modeler.\nHe has worked in insurance since 2008 and has been a Fellow of the Casualty Actuarial Society (FCAS) since 2014. He is also a Certified Specialist in Predictive Analytics (CSPA) and holds a master’s degree in Physics from The Ohio State University.\nHis experience includes several years in insurance pricing and more than a decade building predictive models for auto and homeowners insurance.\nThat work has included:\n\nGLMs and gradient-boosted models for homeowners and auto class plans\nInsurance pricing and segmentation\nRetention modeling\nPortfolio profitability analysis integrating pricing and retention models\nModel review and documentation\nTranslating analytical models into usable rating and business workflows"
+  }
+]

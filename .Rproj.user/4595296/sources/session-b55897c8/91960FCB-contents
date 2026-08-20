@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Sollenberger Actuarial Technologies"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: software.qmd
+        text: Software
+      - href: notes.qmd
+        text: Notes
+      - href: about.qmd
+        text: About
+      - href: contact.qmd
+        text: Contact
+
+  page-footer:
+    left: "© Sollenberger Actuarial Technologies"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    smooth-scroll: true
