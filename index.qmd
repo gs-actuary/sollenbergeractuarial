@@ -1,44 +1,88 @@
 ---
 title: "Sollenberger Actuarial Technologies"
 page-layout: full
+title-block-banner: false
 ---
 
-## Actuarial software, modeling, and technical work
+::: {.hero}
+## Open-source actuarial software for transparent, reproducible insurance work
 
-Sollenberger Actuarial Technologies is a home for open-source software and technical work related to insurance rating, predictive modeling, and actuarial workflows.
+Sollenberger Actuarial Technologies is a vehicle for publishing open-source software and technical work focused on insurance rating, pricing, predictive modeling, and implementation.
 
-The focus is practical: tools that make actuarial work more transparent, reproducible, and easier to move between analytical and production environments.
+The goal is practical: make actuarial work easier to understand, test, reproduce, review, and carry into production.
 
-## Featured software
+[Explore the software](software.qmd){.btn .btn-primary .me-2}
+[GitHub](https://github.com/gs-actuary){.btn .btn-outline-secondary}
+:::
 
-### ratingtables
+## Actuarial technology, built in the open
 
-`ratingtables` is an R package for building transparent and reproducible insurance rating workflows from long-form factor tables.
+The projects published here grow out of recurring actuarial problems: representing complex rating plans clearly, preserving an auditable chain from current to proposed rates, fitting useful predictive models, and making analytical work easier to validate and implement.
 
-It is designed around practical rating needs, including batch rating, traceability, validation, coverage-specific logic, interactions, custom functions, and implementation-oriented workflows.
+The emphasis is on tools that are:
 
-[View on CRAN](https://cran.r-project.org/package=ratingtables)
+::: {.feature-grid}
+::: {.feature-card}
+### Transparent
+Calculations and model structures should be inspectable rather than hidden behind opaque interfaces.
+:::
 
-[View source on GitHub](https://github.com/gs-actuary/ratingtables)
+::: {.feature-card}
+### Reproducible
+Important analytical and rating decisions should be expressible in code, version controlled, and repeatable.
+:::
 
-## Areas of interest
+::: {.feature-card}
+### Practical
+Software should fit real actuarial workflows, including Excel interaction, implementation review, auditing, and production use.
+:::
+:::
 
-- Insurance pricing and class plan modeling
-- GLMs and gradient-boosted models
-- Rating implementation and rating-table workflows
-- Retention modeling
-- Portfolio profitability analysis integrating pricing and retention models
-- Model review, documentation, and reproducibility
-- Tools that help bridge R-based analytical workflows with business-facing processes
+## Current projects
 
-## About
+::: {.project-grid}
+::: {.project-card}
+### `ratingtables`
 
-Greg Sollenberger is a Fellow of the Casualty Actuarial Society (FCAS) and a Certified Specialist in Predictive Analytics (CSPA). He has worked in insurance since 2008 and has more than a decade of experience building predictive models for personal lines insurance.
+A lightweight, table-driven R rating engine for executing insurance rating plans from normalized factor tables and an ordered calculation specification.
 
-[More about Greg](about.qmd)
+It supports coverage-specific specifications, entity-level rating and aggregation, rate-set selection, validation, and optional step-by-step calculation traces.
 
-## Get in touch
+[Learn more](software.qmd#ratingtables) · [GitHub](https://github.com/gs-actuary/ratingtables) · [CRAN](https://CRAN.R-project.org/package=ratingtables)
+:::
 
-Questions, feedback, ideas for the software, and conversations about related actuarial or technical problems are welcome.
+::: {.project-card}
+### `raterevision`
 
-[Contact](contact.qmd)
+An R package for managing rate-table revisions around a table-driven rating workflow.
+
+It supports exporting and importing rate tables through Excel as well as programmatic rate changes that preserve a clear record of how proposed rates were produced.
+
+[Learn more](software.qmd#raterevision) · [GitHub](https://github.com/gs-actuary/raterevision) · [Demos](https://www.youtube.com/@Armchair-Actuary)
+:::
+
+::: {.project-card}
+### `aglmtools`
+
+An experimental R project for interpretable regularized generalized linear modeling, including cumulative ordered encodings and actuarial-oriented handling of numeric and categorical predictors.
+
+[Learn more](software.qmd#aglmtools) · [GitHub](https://github.com/gs-actuary/aglmtools)
+:::
+:::
+
+## Technical focus
+
+The software and technical work here are informed by experience in areas including:
+
+- property and casualty insurance pricing and ratemaking;
+- predictive modeling and generalized linear models;
+- rating-plan design, implementation, and validation;
+- model documentation, governance, and reproducibility;
+- retention and profitability modeling;
+- R-based actuarial workflows and tooling.
+
+## Interested in using the software?
+
+Feedback from actuaries, analysts, implementation teams, and other users is especially useful. I am happy to discuss the packages, implementation questions, difficult rating structures, modeling problems, or ideas for extending the tools.
+
+[Get in touch](contact.qmd){.btn .btn-primary}

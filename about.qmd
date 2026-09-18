@@ -1,26 +1,38 @@
 ---
 title: "About"
+description: "About Greg Sollenberger and Sollenberger Actuarial Technologies."
 ---
 
 ## Greg Sollenberger, FCAS, CSPA
 
-Greg Sollenberger is a property and casualty actuary and predictive modeler.
+I am a property and casualty actuary and data scientist with experience in insurance pricing, predictive modeling, ratemaking, and model governance.
 
-He has worked in insurance since 2008 and has been a Fellow of the Casualty Actuarial Society (FCAS) since 2014. He is also a Certified Specialist in Predictive Analytics (CSPA) and holds a master's degree in Physics from The Ohio State University.
+Much of my technical work has focused on generalized linear models and other predictive methods, translating model results into practical rating structures, and building workflows that make actuarial analysis easier to explain, validate, reproduce, and implement.
 
-His experience includes several years in insurance pricing and more than a decade building predictive models for auto and homeowners insurance.
-
-That work has included:
-
-- GLMs and gradient-boosted models for homeowners and auto class plans
-- Insurance pricing and segmentation
-- Retention modeling
-- Portfolio profitability analysis integrating pricing and retention models
-- Model review and documentation
-- Translating analytical models into usable rating and business workflows
+I work primarily in R and have also worked with a broader modeling and production stack including gradient boosting, regularized regression, APIs, and related data-science tooling.
 
 ## Sollenberger Actuarial Technologies
 
-Sollenberger Actuarial Technologies is a vehicle for publishing actuarial software, technical demonstrations, and related work.
+Sollenberger Actuarial Technologies is a vehicle for publishing open-source actuarial software, demonstrations, and related technical work.
 
-The emphasis is on practical tools that make sophisticated actuarial workflows easier to understand, reproduce, review, and implement.
+The projects are motivated by problems that arise repeatedly in actuarial practice: rating systems that are difficult to audit, rate revisions that lose their history in spreadsheets, models that are hard to translate into implementation, and analytical workflows that are difficult for someone else to reproduce.
+
+The aim is not to replace actuarial judgment with software. It is to make the technical machinery around that judgment clearer and easier to work with.
+
+## Open-source work
+
+Current projects include:
+
+- [`ratingtables`](software.qmd#ratingtables), a table-driven insurance rating engine;
+- [`raterevision`](software.qmd#raterevision), tools for reproducible rate-table revision workflows; and
+- [`aglmtools`](software.qmd#aglmtools), an experimental project for interpretable regularized GLMs.
+
+I am particularly interested in feedback from people trying to use these tools on real rating structures and implementation workflows. Practical edge cases are often the most useful source of ideas for improving the software.
+
+## Elsewhere
+
+- [GitHub](https://github.com/gs-actuary)
+- [LinkedIn](https://www.linkedin.com/in/greg-sollenberger-559146b8/)
+- [YouTube — Armchair Actuary](https://www.youtube.com/@Armchair-Actuary)
+
+*The projects and views presented here are my own and are not presented on behalf of any employer.*

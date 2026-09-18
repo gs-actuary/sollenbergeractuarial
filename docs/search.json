@@ -4,104 +4,132 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "This page collects open-source R tools developed under Sollenberger Actuarial Technologies."
+    "text": "The projects here are intended to make actuarial work more explicit, testable, reproducible, and portable. They are open source and available on GitHub."
   },
   {
     "objectID": "software.html#ratingtables",
     "href": "software.html#ratingtables",
     "title": "Software",
     "section": "ratingtables",
-    "text": "ratingtables\nratingtables provides tools for transparent, reproducible insurance rating workflows.\nThe package is intended for actuaries and analysts who need to move between human-readable rating tables and programmatic rating processes without hiding the mechanics of the calculation.\n\nAreas of functionality\n\nLong-form factor tables\nBatch rating\nRating traces\nValidation\nCoverage-specific specifications\nInteractions\nContinuous rating variables\nCustom rating functions\nImplementation-oriented workflows\n\nCRAN package page\nGitHub repository"
+    "text": "ratingtables\nTable-driven insurance rating in R\nratingtables is a lightweight R package for executing insurance rating plans from policy or entity data, normalized factor tables, and an ordered calculation specification.\nRather than embedding an entire rating plan in product-specific code, the package separates the rating data, rate tables, and order of operations. This makes the mechanics of a plan easier to inspect, version, test, and audit.\n\nWhat it supports\n\nnormalized long-form rating-factor tables;\nordered additive and multiplicative rating steps;\ncoverage-specific rating specifications;\nentity-level rating and aggregation;\ndriver or other sub-entity assignment and averaging;\ninteractions and custom calculation stages;\nrate-set selection using explicit keys or descriptive filters;\nvalidation of rating plans, factor tables, and policy data;\noptional step-by-step trace output for audit and implementation review;\nefficient batch rating when trace output is not required.\n\nratingtables is available on CRAN.\ninstall.packages(\"ratingtables\")\nGitHub repository CRAN Video demo"
   },
   {
-    "objectID": "software.html#additional-projects",
-    "href": "software.html#additional-projects",
+    "objectID": "software.html#raterevision",
+    "href": "software.html#raterevision",
     "title": "Software",
-    "section": "Additional projects",
-    "text": "Additional projects\nMore actuarial and modeling tools will be added here as they are released."
+    "section": "raterevision",
+    "text": "raterevision\nReproducible workflows for revising insurance rate tables\nraterevision is an R package built around the idea that a rate revision should preserve a clear chain from current rates to proposed rates.\nIt provides tools for working with rate tables outside the rating engine itself: exporting tables for review or editing, importing them back into R, applying programmatic changes, and evaluating the effect of those changes using ratingtables.\nA revision can therefore be expressed as a readable sequence of changes rather than only as a final collection of replacement tables.\n\nTypical workflow\n\nStart with the current rating tables.\nExport selected tables to Excel when manual review or editing is useful.\nApply rate changes either programmatically or through an import workflow.\nUse ratingtables to rate current and proposed plans.\nMeasure overall and segment-level effects.\nPreserve the code and resulting tables as a reproducible record of the revision.\n\nraterevision is currently available from GitHub and is not yet on CRAN.\ninstall.packages(\"pak\")\npak::pkg_install(\"gs-actuary/raterevision\")\nThe Armchair Actuary YouTube channel includes three demonstrations of raterevision.\nGitHub repository Watch the demos"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Sollenberger Actuarial Technologies",
-    "section": "",
-    "text": "Sollenberger Actuarial Technologies is a home for open-source software and technical work related to insurance rating, predictive modeling, and actuarial workflows.\nThe focus is practical: tools that make actuarial work more transparent, reproducible, and easier to move between analytical and production environments."
+    "objectID": "software.html#aglmtools",
+    "href": "software.html#aglmtools",
+    "title": "Software",
+    "section": "aglmtools",
+    "text": "aglmtools\nExperimental tools for interpretable regularized GLMs\naglmtools is a development-stage R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.\nThe project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.\nThis project is less mature than ratingtables and raterevision; the GitHub repository is the best place to follow its current development.\nGitHub repository"
   },
   {
-    "objectID": "index.html#actuarial-software-modeling-and-technical-work",
-    "href": "index.html#actuarial-software-modeling-and-technical-work",
-    "title": "Sollenberger Actuarial Technologies",
-    "section": "",
-    "text": "Sollenberger Actuarial Technologies is a home for open-source software and technical work related to insurance rating, predictive modeling, and actuarial workflows.\nThe focus is practical: tools that make actuarial work more transparent, reproducible, and easier to move between analytical and production environments."
-  },
-  {
-    "objectID": "index.html#featured-software",
-    "href": "index.html#featured-software",
-    "title": "Sollenberger Actuarial Technologies",
-    "section": "Featured software",
-    "text": "Featured software\n\nratingtables\nratingtables is an R package for building transparent and reproducible insurance rating workflows from long-form factor tables.\nIt is designed around practical rating needs, including batch rating, traceability, validation, coverage-specific logic, interactions, custom functions, and implementation-oriented workflows.\nView on CRAN\nView source on GitHub"
-  },
-  {
-    "objectID": "index.html#areas-of-interest",
-    "href": "index.html#areas-of-interest",
-    "title": "Sollenberger Actuarial Technologies",
-    "section": "Areas of interest",
-    "text": "Areas of interest\n\nInsurance pricing and class plan modeling\nGLMs and gradient-boosted models\nRating implementation and rating-table workflows\nRetention modeling\nPortfolio profitability analysis integrating pricing and retention models\nModel review, documentation, and reproducibility\nTools that help bridge R-based analytical workflows with business-facing processes"
-  },
-  {
-    "objectID": "index.html#about",
-    "href": "index.html#about",
-    "title": "Sollenberger Actuarial Technologies",
-    "section": "About",
-    "text": "About\nGreg Sollenberger is a Fellow of the Casualty Actuarial Society (FCAS) and a Certified Specialist in Predictive Analytics (CSPA). He has worked in insurance since 2008 and has more than a decade of experience building predictive models for personal lines insurance.\nMore about Greg"
-  },
-  {
-    "objectID": "index.html#get-in-touch",
-    "href": "index.html#get-in-touch",
-    "title": "Sollenberger Actuarial Technologies",
-    "section": "Get in touch",
-    "text": "Get in touch\nQuestions, feedback, ideas for the software, and conversations about related actuarial or technical problems are welcome.\nContact"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Greg Sollenberger is a property and casualty actuary and predictive modeler.\nHe has worked in insurance since 2008 and has been a Fellow of the Casualty Actuarial Society (FCAS) since 2014. He is also a Certified Specialist in Predictive Analytics (CSPA) and holds a master’s degree in Physics from The Ohio State University.\nHis experience includes several years in insurance pricing and more than a decade building predictive models for auto and homeowners insurance.\nThat work has included:\n\nGLMs and gradient-boosted models for homeowners and auto class plans\nInsurance pricing and segmentation\nRetention modeling\nPortfolio profitability analysis integrating pricing and retention models\nModel review and documentation\nTranslating analytical models into usable rating and business workflows"
-  },
-  {
-    "objectID": "about.html#greg-sollenberger-fcas-cspa",
-    "href": "about.html#greg-sollenberger-fcas-cspa",
-    "title": "About",
-    "section": "",
-    "text": "Greg Sollenberger is a property and casualty actuary and predictive modeler.\nHe has worked in insurance since 2008 and has been a Fellow of the Casualty Actuarial Society (FCAS) since 2014. He is also a Certified Specialist in Predictive Analytics (CSPA) and holds a master’s degree in Physics from The Ohio State University.\nHis experience includes several years in insurance pricing and more than a decade building predictive models for auto and homeowners insurance.\nThat work has included:\n\nGLMs and gradient-boosted models for homeowners and auto class plans\nInsurance pricing and segmentation\nRetention modeling\nPortfolio profitability analysis integrating pricing and retention models\nModel review and documentation\nTranslating analytical models into usable rating and business workflows"
-  },
-  {
-    "objectID": "about.html#sollenberger-actuarial-technologies",
-    "href": "about.html#sollenberger-actuarial-technologies",
-    "title": "About",
-    "section": "Sollenberger Actuarial Technologies",
-    "text": "Sollenberger Actuarial Technologies\nSollenberger Actuarial Technologies is a vehicle for publishing actuarial software, technical demonstrations, and related work.\nThe emphasis is on practical tools that make sophisticated actuarial workflows easier to understand, reproduce, review, and implement."
+    "objectID": "software.html#demonstrations-and-discussion",
+    "href": "software.html#demonstrations-and-discussion",
+    "title": "Software",
+    "section": "Demonstrations and discussion",
+    "text": "Demonstrations and discussion\nThe Armchair Actuary YouTube channel contains demonstrations of the rating and rate-revision tools.\nIf you are experimenting with one of these packages—or working through a rating or modeling problem that exposes a limitation in them—I welcome feedback and discussion.\nContact me"
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Questions about the software, technical feedback, and conversations about actuarial modeling or implementation problems are welcome.\nIf you are working through an interesting pricing, modeling, rating, or actuarial technology problem and think my background may be relevant, feel free to reach out.\nEmail: greg@sollenbergeractuarial.com\nGitHub: https://github.com/gs-actuary/\nLinkedIn: LinkedIn profile"
+    "text": "I welcome conversations about collaboration, software, and technical actuarial problems.\nIf you are working through a pricing, modeling, rating, implementation, or model-review problem where my background may be useful, please reach out. I am especially interested in hearing from people who are using—or considering using—the software published here."
   },
   {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "Notes",
+    "objectID": "contact.html#email",
+    "href": "contact.html#email",
+    "title": "Contact",
+    "section": "Email",
+    "text": "Email\ngreg@sollenbergeractuarial.com"
+  },
+  {
+    "objectID": "contact.html#online",
+    "href": "contact.html#online",
+    "title": "Contact",
+    "section": "Online",
+    "text": "Online\n\nGitHub\nLinkedIn\nYouTube — Armchair Actuary\n\nFor software bugs, reproducible examples, and feature requests, opening an issue in the relevant GitHub repository is also welcome."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "This section is intended for technical notes, demonstrations, package walkthroughs, and other material related to actuarial modeling and software."
+    "text": "I am a property and casualty actuary and data scientist with experience in insurance pricing, predictive modeling, ratemaking, and model governance.\nMuch of my technical work has focused on generalized linear models and other predictive methods, translating model results into practical rating structures, and building workflows that make actuarial analysis easier to explain, validate, reproduce, and implement.\nI work primarily in R and have also worked with a broader modeling and production stack including gradient boosting, regularized regression, APIs, and related data-science tooling."
   },
   {
-    "objectID": "notes.html#planned-topics",
-    "href": "notes.html#planned-topics",
-    "title": "Notes",
-    "section": "Planned topics",
-    "text": "Planned topics\n\nWorked examples using ratingtables\nRating-table workflow design\nMoving between models and production rating structures\nPredictive modeling implementation\nR and Excel interoperability for actuarial workflows\nModel transparency and reproducibility"
+    "objectID": "about.html#greg-sollenberger-fcas-cspa",
+    "href": "about.html#greg-sollenberger-fcas-cspa",
+    "title": "About",
+    "section": "",
+    "text": "I am a property and casualty actuary and data scientist with experience in insurance pricing, predictive modeling, ratemaking, and model governance.\nMuch of my technical work has focused on generalized linear models and other predictive methods, translating model results into practical rating structures, and building workflows that make actuarial analysis easier to explain, validate, reproduce, and implement.\nI work primarily in R and have also worked with a broader modeling and production stack including gradient boosting, regularized regression, APIs, and related data-science tooling."
+  },
+  {
+    "objectID": "about.html#sollenberger-actuarial-technologies",
+    "href": "about.html#sollenberger-actuarial-technologies",
+    "title": "About",
+    "section": "Sollenberger Actuarial Technologies",
+    "text": "Sollenberger Actuarial Technologies\nSollenberger Actuarial Technologies is a vehicle for publishing open-source actuarial software, demonstrations, and related technical work.\nThe projects are motivated by problems that arise repeatedly in actuarial practice: rating systems that are difficult to audit, rate revisions that lose their history in spreadsheets, models that are hard to translate into implementation, and analytical workflows that are difficult for someone else to reproduce.\nThe aim is not to replace actuarial judgment with software. It is to make the technical machinery around that judgment clearer and easier to work with."
+  },
+  {
+    "objectID": "about.html#open-source-work",
+    "href": "about.html#open-source-work",
+    "title": "About",
+    "section": "Open-source work",
+    "text": "Open-source work\nCurrent projects include:\n\nratingtables, a table-driven insurance rating engine;\nraterevision, tools for reproducible rate-table revision workflows; and\naglmtools, an experimental project for interpretable regularized GLMs.\n\nI am particularly interested in feedback from people trying to use these tools on real rating structures and implementation workflows. Practical edge cases are often the most useful source of ideas for improving the software."
+  },
+  {
+    "objectID": "about.html#elsewhere",
+    "href": "about.html#elsewhere",
+    "title": "About",
+    "section": "Elsewhere",
+    "text": "Elsewhere\n\nGitHub\nLinkedIn\nYouTube — Armchair Actuary\n\nThe projects and views presented here are my own and are not presented on behalf of any employer."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "",
+    "text": "Sollenberger Actuarial Technologies is a vehicle for publishing open-source software and technical work focused on insurance rating, pricing, predictive modeling, and implementation.\nThe goal is practical: make actuarial work easier to understand, test, reproduce, review, and carry into production.\nExplore the software GitHub"
+  },
+  {
+    "objectID": "index.html#open-source-actuarial-software-for-transparent-reproducible-insurance-work",
+    "href": "index.html#open-source-actuarial-software-for-transparent-reproducible-insurance-work",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "",
+    "text": "Sollenberger Actuarial Technologies is a vehicle for publishing open-source software and technical work focused on insurance rating, pricing, predictive modeling, and implementation.\nThe goal is practical: make actuarial work easier to understand, test, reproduce, review, and carry into production.\nExplore the software GitHub"
+  },
+  {
+    "objectID": "index.html#actuarial-technology-built-in-the-open",
+    "href": "index.html#actuarial-technology-built-in-the-open",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "Actuarial technology, built in the open",
+    "text": "Actuarial technology, built in the open\nThe projects published here grow out of recurring actuarial problems: representing complex rating plans clearly, preserving an auditable chain from current to proposed rates, fitting useful predictive models, and making analytical work easier to validate and implement.\nThe emphasis is on tools that are:\n\n\nTransparent\nCalculations and model structures should be inspectable rather than hidden behind opaque interfaces.\n\n\nReproducible\nImportant analytical and rating decisions should be expressible in code, version controlled, and repeatable.\n\n\nPractical\nSoftware should fit real actuarial workflows, including Excel interaction, implementation review, auditing, and production use."
+  },
+  {
+    "objectID": "index.html#current-projects",
+    "href": "index.html#current-projects",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "Current projects",
+    "text": "Current projects\n\n\nratingtables\nA lightweight, table-driven R rating engine for executing insurance rating plans from normalized factor tables and an ordered calculation specification.\nIt supports coverage-specific specifications, entity-level rating and aggregation, rate-set selection, validation, and optional step-by-step calculation traces.\nLearn more · GitHub · CRAN\n\n\nraterevision\nAn R package for managing rate-table revisions around a table-driven rating workflow.\nIt supports exporting and importing rate tables through Excel as well as programmatic rate changes that preserve a clear record of how proposed rates were produced.\nLearn more · GitHub · Demos\n\n\naglmtools\nAn experimental R project for interpretable regularized generalized linear modeling, including cumulative ordered encodings and actuarial-oriented handling of numeric and categorical predictors.\nLearn more · GitHub"
+  },
+  {
+    "objectID": "index.html#technical-focus",
+    "href": "index.html#technical-focus",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "Technical focus",
+    "text": "Technical focus\nThe software and technical work here are informed by experience in areas including:\n\nproperty and casualty insurance pricing and ratemaking;\npredictive modeling and generalized linear models;\nrating-plan design, implementation, and validation;\nmodel documentation, governance, and reproducibility;\nretention and profitability modeling;\nR-based actuarial workflows and tooling."
+  },
+  {
+    "objectID": "index.html#interested-in-using-the-software",
+    "href": "index.html#interested-in-using-the-software",
+    "title": "Sollenberger Actuarial Technologies",
+    "section": "Interested in using the software?",
+    "text": "Interested in using the software?\nFeedback from actuaries, analysts, implementation teams, and other users is especially useful. I am happy to discuss the packages, implementation questions, difficult rating structures, modeling problems, or ideas for extending the tools.\nGet in touch"
   }
 ]

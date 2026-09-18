@@ -1,13 +1,20 @@
 ---
 title: "Contact"
+description: "Contact Greg Sollenberger about open-source actuarial software and technical actuarial work."
 ---
 
-Questions about the software, technical feedback, and conversations about actuarial modeling or implementation problems are welcome.
+I welcome conversations about collaboration, software, and technical actuarial problems.
 
-If you are working through an interesting pricing, modeling, rating, or actuarial technology problem and think my background may be relevant, feel free to reach out.
+If you are working through a pricing, modeling, rating, implementation, or model-review problem where my background may be useful, please reach out. I am especially interested in hearing from people who are using—or considering using—the software published here.
 
-**Email:** [greg@sollenbergeractuarial.com](mailto:greg@sollenbergeractuarial.com)
+## Email
 
-**GitHub:** [https://github.com/gs-actuary/](https://github.com/gs-actuary/)
+[greg@sollenbergeractuarial.com](mailto:greg@sollenbergeractuarial.com)
 
-**LinkedIn:** [LinkedIn profile](https://www.linkedin.com/in/greg-sollenberger-559146b8/)
+## Online
+
+- [GitHub](https://github.com/gs-actuary)
+- [LinkedIn](https://www.linkedin.com/in/greg-sollenberger-559146b8/)
+- [YouTube — Armchair Actuary](https://www.youtube.com/@Armchair-Actuary)
+
+For software bugs, reproducible examples, and feature requests, opening an issue in the relevant GitHub repository is also welcome.

@@ -1,46 +1,39 @@
-# Sollenberger Actuarial Technologies website
+# Sollenberger Actuarial Technologies
 
-Starter Quarto website project.
+Source repository for [sollenbergeractuarial.com](https://sollenbergeractuarial.com/).
 
-## Open in RStudio
+The site publishes open-source actuarial software and technical work by Greg Sollenberger, FCAS, CSPA, with a focus on insurance rating, pricing, predictive modeling, and reproducible implementation workflows.
 
-Open the project folder in RStudio. If you want an `.Rproj` file, you can either open the existing one included here or create a new RStudio Project from this directory.
+## Projects featured on the site
 
-## Preview locally
+- [`ratingtables`](https://github.com/gs-actuary/ratingtables) — table-driven insurance rating in R
+- [`raterevision`](https://github.com/gs-actuary/raterevision) — reproducible rate-table revision workflows
+- [`aglmtools`](https://github.com/gs-actuary/aglmtools) — experimental tools for interpretable regularized GLMs
 
-From a terminal in the project directory:
+Video demonstrations are available on the [Armchair Actuary YouTube channel](https://www.youtube.com/@Armchair-Actuary).
+
+## Website structure
+
+- `index.qmd` — home page
+- `software.qmd` — software overview
+- `about.qmd` — background and project purpose
+- `contact.qmd` — contact information
+- `_quarto.yml` — Quarto website configuration
+- `styles.css` — site-specific styling
+- `CNAME` — custom domain configuration
+
+The rendered website is written to `docs/` for GitHub Pages.
+
+## Local preview
+
+With [Quarto](https://quarto.org/) installed:
 
 ```bash
 quarto preview
 ```
 
-Or use RStudio's **Render** / **Preview** controls.
-
-## Render the site
+To render the production site:
 
 ```bash
 quarto render
 ```
-
-The generated website will be written to `_site/`.
-
-## Before publishing
-
-Update:
-
-- Email address in `contact.qmd`
-- GitHub links
-- LinkedIn link
-- Any wording you want to refine
-- Package/project links
-
-## Suggested publishing path
-
-Once the site looks right locally:
-
-1. Put this project in a Git repository.
-2. Push it to GitHub.
-3. Publish the rendered Quarto site using GitHub Pages or another static host.
-4. Point your existing custom domain to that host.
-
-Your Microsoft 365 email can remain exactly where it is; website DNS records and email DNS records are separate.

@@ -1,0 +1,41 @@
+---
+title: "Software"
+---
+
+This page collects open-source R tools developed under Sollenberger Actuarial Technologies.
+
+## ratingtables
+
+`ratingtables` provides tools for transparent, reproducible insurance rating workflows.
+
+The package is intended for actuaries and analysts who need to move between human-readable rating tables and programmatic rating processes without hiding the mechanics of the calculation.
+
+### Areas of functionality
+
+- Long-form factor tables
+- Batch rating
+- Rating traces
+- Validation
+- Coverage-specific specifications
+- Interactions
+- Continuous rating variables
+- Custom rating functions
+- Implementation-oriented workflows
+
+[CRAN package page](https://cran.r-project.org/package=ratingtables)
+
+[GitHub repository](https://github.com/)
+
+------------------------------------------------------------------------
+
+## Additional projects
+
+More actuarial and modeling tools will be added here as they are released.
+
+```{=html}
+<!-- Suggested future entries:
+- model-to-rating-table tools
+- AGLM / interpretable modeling tools
+- Excel ↔ R actuarial workflow utilities
+-->
+```

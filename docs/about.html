@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="About Greg Sollenberger and Sollenberger Actuarial Technologies.">
 
 <title>About – Sollenberger Actuarial Technologies</title>
 <style>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ec99a8efe510844151b90c0472fa725a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +75,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="About – Sollenberger Actuarial Technologies">
+<meta property="og:description" content="About Greg Sollenberger and Sollenberger Actuarial Technologies.">
+<meta property="og:site_name" content="Sollenberger Actuarial Technologies">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -102,16 +106,24 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html"> 
-<span class="menu-text">Notes</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gs-actuary"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@Armchair-Actuary"> <i class="bi bi-youtube" role="img" aria-label="YouTube">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -133,6 +145,11 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">About</h1>
 </div>
 
+<div>
+  <div class="description">
+    About Greg Sollenberger and Sollenberger Actuarial Technologies.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -149,23 +166,34 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="greg-sollenberger-fcas-cspa" class="level2">
 <h2 class="anchored" data-anchor-id="greg-sollenberger-fcas-cspa">Greg Sollenberger, FCAS, CSPA</h2>
-<p>Greg Sollenberger is a property and casualty actuary and predictive modeler.</p>
-<p>He has worked in insurance since 2008 and has been a Fellow of the Casualty Actuarial Society (FCAS) since 2014. He is also a Certified Specialist in Predictive Analytics (CSPA) and holds a master’s degree in Physics from The Ohio State University.</p>
-<p>His experience includes several years in insurance pricing and more than a decade building predictive models for auto and homeowners insurance.</p>
-<p>That work has included:</p>
-<ul>
-<li>GLMs and gradient-boosted models for homeowners and auto class plans</li>
-<li>Insurance pricing and segmentation</li>
-<li>Retention modeling</li>
-<li>Portfolio profitability analysis integrating pricing and retention models</li>
-<li>Model review and documentation</li>
-<li>Translating analytical models into usable rating and business workflows</li>
-</ul>
+<p>I am a property and casualty actuary and data scientist with experience in insurance pricing, predictive modeling, ratemaking, and model governance.</p>
+<p>Much of my technical work has focused on generalized linear models and other predictive methods, translating model results into practical rating structures, and building workflows that make actuarial analysis easier to explain, validate, reproduce, and implement.</p>
+<p>I work primarily in R and have also worked with a broader modeling and production stack including gradient boosting, regularized regression, APIs, and related data-science tooling.</p>
 </section>
 <section id="sollenberger-actuarial-technologies" class="level2">
 <h2 class="anchored" data-anchor-id="sollenberger-actuarial-technologies">Sollenberger Actuarial Technologies</h2>
-<p>Sollenberger Actuarial Technologies is a vehicle for publishing actuarial software, technical demonstrations, and related work.</p>
-<p>The emphasis is on practical tools that make sophisticated actuarial workflows easier to understand, reproduce, review, and implement.</p>
+<p>Sollenberger Actuarial Technologies is a vehicle for publishing open-source actuarial software, demonstrations, and related technical work.</p>
+<p>The projects are motivated by problems that arise repeatedly in actuarial practice: rating systems that are difficult to audit, rate revisions that lose their history in spreadsheets, models that are hard to translate into implementation, and analytical workflows that are difficult for someone else to reproduce.</p>
+<p>The aim is not to replace actuarial judgment with software. It is to make the technical machinery around that judgment clearer and easier to work with.</p>
+</section>
+<section id="open-source-work" class="level2">
+<h2 class="anchored" data-anchor-id="open-source-work">Open-source work</h2>
+<p>Current projects include:</p>
+<ul>
+<li><a href="./software.html#ratingtables"><code>ratingtables</code></a>, a table-driven insurance rating engine;</li>
+<li><a href="./software.html#raterevision"><code>raterevision</code></a>, tools for reproducible rate-table revision workflows; and</li>
+<li><a href="./software.html#aglmtools"><code>aglmtools</code></a>, an experimental project for interpretable regularized GLMs.</li>
+</ul>
+<p>I am particularly interested in feedback from people trying to use these tools on real rating structures and implementation workflows. Practical edge cases are often the most useful source of ideas for improving the software.</p>
+</section>
+<section id="elsewhere" class="level2">
+<h2 class="anchored" data-anchor-id="elsewhere">Elsewhere</h2>
+<ul>
+<li><a href="https://github.com/gs-actuary">GitHub</a></li>
+<li><a href="https://www.linkedin.com/in/greg-sollenberger-559146b8/">LinkedIn</a></li>
+<li><a href="https://www.youtube.com/@Armchair-Actuary">YouTube — Armchair Actuary</a></li>
+</ul>
+<p><em>The projects and views presented here are my own and are not presented on behalf of any employer.</em></p>
 
 
 </section>
@@ -244,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/sollenbergeractuarial\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -258,6 +286,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -575,13 +608,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Sollenberger Actuarial Technologies</p>
+<p>© 2026 Sollenberger Actuarial Technologies</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Built with Quarto</p>
+<p>Open-source actuarial software by Greg Sollenberger, FCAS, CSPA</p>
 </div>
   </div>
 </footer>

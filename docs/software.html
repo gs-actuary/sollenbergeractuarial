@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Open-source R packages for insurance rating, rate revision, and interpretable actuarial modeling.">
 
 <title>Software – Sollenberger Actuarial Technologies</title>
 <style>
@@ -22,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -42,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ec99a8efe510844151b90c0472fa725a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +110,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Software – Sollenberger Actuarial Technologies">
+<meta property="og:description" content="Open-source R packages for insurance rating, rate revision, and interpretable actuarial modeling.">
+<meta property="og:site_name" content="Sollenberger Actuarial Technologies">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -102,16 +141,24 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html"> 
-<span class="menu-text">Notes</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gs-actuary"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@Armchair-Actuary"> <i class="bi bi-youtube" role="img" aria-label="YouTube">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -133,6 +180,11 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Software</h1>
 </div>
 
+<div>
+  <div class="description">
+    Open-source R packages for insurance rating, rate revision, and interpretable actuarial modeling.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -147,37 +199,70 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This page collects open-source R tools developed under Sollenberger Actuarial Technologies.</p>
+<p>The projects here are intended to make actuarial work more explicit, testable, reproducible, and portable. They are open source and available on GitHub.</p>
 <section id="ratingtables" class="level2">
-<h2 class="anchored" data-anchor-id="ratingtables">ratingtables</h2>
-<p><code>ratingtables</code> provides tools for transparent, reproducible insurance rating workflows.</p>
-<p>The package is intended for actuaries and analysts who need to move between human-readable rating tables and programmatic rating processes without hiding the mechanics of the calculation.</p>
-<section id="areas-of-functionality" class="level3">
-<h3 class="anchored" data-anchor-id="areas-of-functionality">Areas of functionality</h3>
+<h2 class="anchored" data-anchor-id="ratingtables"><code>ratingtables</code></h2>
+<p><strong>Table-driven insurance rating in R</strong></p>
+<p><code>ratingtables</code> is a lightweight R package for executing insurance rating plans from policy or entity data, normalized factor tables, and an ordered calculation specification.</p>
+<p>Rather than embedding an entire rating plan in product-specific code, the package separates the <strong>rating data</strong>, <strong>rate tables</strong>, and <strong>order of operations</strong>. This makes the mechanics of a plan easier to inspect, version, test, and audit.</p>
+<section id="what-it-supports" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-supports">What it supports</h3>
 <ul>
-<li>Long-form factor tables</li>
-<li>Batch rating</li>
-<li>Rating traces</li>
-<li>Validation</li>
-<li>Coverage-specific specifications</li>
-<li>Interactions</li>
-<li>Continuous rating variables</li>
-<li>Custom rating functions</li>
-<li>Implementation-oriented workflows</li>
+<li>normalized long-form rating-factor tables;</li>
+<li>ordered additive and multiplicative rating steps;</li>
+<li>coverage-specific rating specifications;</li>
+<li>entity-level rating and aggregation;</li>
+<li>driver or other sub-entity assignment and averaging;</li>
+<li>interactions and custom calculation stages;</li>
+<li>rate-set selection using explicit keys or descriptive filters;</li>
+<li>validation of rating plans, factor tables, and policy data;</li>
+<li>optional step-by-step trace output for audit and implementation review;</li>
+<li>efficient batch rating when trace output is not required.</li>
 </ul>
-<p><a href="https://cran.r-project.org/package=ratingtables">CRAN package page</a></p>
-<p><a href="https://github.com/">GitHub repository</a></p>
+<p><code>ratingtables</code> is available on CRAN.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ratingtables"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://github.com/gs-actuary/ratingtables" class="btn btn-primary me-2">GitHub repository</a> <a href="https://CRAN.R-project.org/package=ratingtables" class="btn btn-outline-secondary me-2">CRAN</a> <a href="https://www.youtube.com/@Armchair-Actuary" class="btn btn-outline-secondary">Video demo</a></p>
 <hr>
 </section>
 </section>
-<section id="additional-projects" class="level2">
-<h2 class="anchored" data-anchor-id="additional-projects">Additional projects</h2>
-<p>More actuarial and modeling tools will be added here as they are released.</p>
-<!-- Suggested future entries:
-- model-to-rating-table tools
-- AGLM / interpretable modeling tools
-- Excel ↔ R actuarial workflow utilities
--->
+<section id="raterevision" class="level2">
+<h2 class="anchored" data-anchor-id="raterevision"><code>raterevision</code></h2>
+<p><strong>Reproducible workflows for revising insurance rate tables</strong></p>
+<p><code>raterevision</code> is an R package built around the idea that a rate revision should preserve a clear chain from <strong>current rates</strong> to <strong>proposed rates</strong>.</p>
+<p>It provides tools for working with rate tables outside the rating engine itself: exporting tables for review or editing, importing them back into R, applying programmatic changes, and evaluating the effect of those changes using <code>ratingtables</code>.</p>
+<p>A revision can therefore be expressed as a readable sequence of changes rather than only as a final collection of replacement tables.</p>
+<section id="typical-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="typical-workflow">Typical workflow</h3>
+<ol type="1">
+<li>Start with the current rating tables.</li>
+<li>Export selected tables to Excel when manual review or editing is useful.</li>
+<li>Apply rate changes either programmatically or through an import workflow.</li>
+<li>Use <code>ratingtables</code> to rate current and proposed plans.</li>
+<li>Measure overall and segment-level effects.</li>
+<li>Preserve the code and resulting tables as a reproducible record of the revision.</li>
+</ol>
+<p><code>raterevision</code> is currently available from GitHub and is not yet on CRAN.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"pak"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pkg_install</span>(<span class="st">"gs-actuary/raterevision"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The Armchair Actuary YouTube channel includes three demonstrations of <code>raterevision</code>.</p>
+<p><a href="https://github.com/gs-actuary/raterevision" class="btn btn-primary me-2">GitHub repository</a> <a href="https://www.youtube.com/@Armchair-Actuary" class="btn btn-outline-secondary">Watch the demos</a></p>
+<hr>
+</section>
+</section>
+<section id="aglmtools" class="level2">
+<h2 class="anchored" data-anchor-id="aglmtools"><code>aglmtools</code></h2>
+<p><strong>Experimental tools for interpretable regularized GLMs</strong></p>
+<p><code>aglmtools</code> is a development-stage R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.</p>
+<p>The project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.</p>
+<p>This project is less mature than <code>ratingtables</code> and <code>raterevision</code>; the GitHub repository is the best place to follow its current development.</p>
+<p><a href="https://github.com/gs-actuary/aglmtools" class="btn btn-primary">GitHub repository</a></p>
+<hr>
+</section>
+<section id="demonstrations-and-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="demonstrations-and-discussion">Demonstrations and discussion</h2>
+<p>The <a href="https://www.youtube.com/@Armchair-Actuary">Armchair Actuary YouTube channel</a> contains demonstrations of the rating and rate-revision tools.</p>
+<p>If you are experimenting with one of these packages—or working through a rating or modeling problem that exposes a limitation in them—I welcome feedback and discussion.</p>
+<p><a href="./contact.html">Contact me</a></p>
 
 
 </section>
@@ -256,7 +341,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/sollenbergeractuarial\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -270,6 +355,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -587,13 +677,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Sollenberger Actuarial Technologies</p>
+<p>© 2026 Sollenberger Actuarial Technologies</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Built with Quarto</p>
+<p>Open-source actuarial software by Greg Sollenberger, FCAS, CSPA</p>
 </div>
   </div>
 </footer>

@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Contact Greg Sollenberger about open-source actuarial software and technical actuarial work.">
 
 <title>Contact – Sollenberger Actuarial Technologies</title>
 <style>
@@ -42,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ec99a8efe510844151b90c0472fa725a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +75,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Contact – Sollenberger Actuarial Technologies">
+<meta property="og:description" content="Contact Greg Sollenberger about open-source actuarial software and technical actuarial work.">
+<meta property="og:site_name" content="Sollenberger Actuarial Technologies">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -102,16 +106,24 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html"> 
-<span class="menu-text">Notes</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./contact.html" aria-current="page"> 
 <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gs-actuary"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@Armchair-Actuary"> <i class="bi bi-youtube" role="img" aria-label="YouTube">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -133,6 +145,11 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Contact</h1>
 </div>
 
+<div>
+  <div class="description">
+    Contact Greg Sollenberger about open-source actuarial software and technical actuarial work.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -147,13 +164,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Questions about the software, technical feedback, and conversations about actuarial modeling or implementation problems are welcome.</p>
-<p>If you are working through an interesting pricing, modeling, rating, or actuarial technology problem and think my background may be relevant, feel free to reach out.</p>
-<p><strong>Email:</strong> <a href="mailto:greg@sollenbergeractuarial.com">greg@sollenbergeractuarial.com</a></p>
-<p><strong>GitHub:</strong> <a href="https://github.com/gs-actuary/">https://github.com/gs-actuary/</a></p>
-<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/greg-sollenberger-559146b8/">LinkedIn profile</a></p>
+<p>I welcome conversations about collaboration, software, and technical actuarial problems.</p>
+<p>If you are working through a pricing, modeling, rating, implementation, or model-review problem where my background may be useful, please reach out. I am especially interested in hearing from people who are using—or considering using—the software published here.</p>
+<section id="email" class="level2">
+<h2 class="anchored" data-anchor-id="email">Email</h2>
+<p><a href="mailto:greg@sollenbergeractuarial.com">greg@sollenbergeractuarial.com</a></p>
+</section>
+<section id="online" class="level2">
+<h2 class="anchored" data-anchor-id="online">Online</h2>
+<ul>
+<li><a href="https://github.com/gs-actuary">GitHub</a></li>
+<li><a href="https://www.linkedin.com/in/greg-sollenberger-559146b8/">LinkedIn</a></li>
+<li><a href="https://www.youtube.com/@Armchair-Actuary">YouTube — Armchair Actuary</a></li>
+</ul>
+<p>For software bugs, reproducible examples, and feature requests, opening an issue in the relevant GitHub repository is also welcome.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -229,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/sollenbergeractuarial\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -243,6 +270,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -560,13 +592,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Sollenberger Actuarial Technologies</p>
+<p>© 2026 Sollenberger Actuarial Technologies</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Built with Quarto</p>
+<p>Open-source actuarial software by Greg Sollenberger, FCAS, CSPA</p>
 </div>
   </div>
 </footer>

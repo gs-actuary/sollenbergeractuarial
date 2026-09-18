@@ -1,0 +1,46 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - CNAME
+
+website:
+  title: "Sollenberger Actuarial Technologies"
+  site-url: "https://sollenbergeractuarial.com"
+  description: "Open-source actuarial software and technical work in insurance rating, pricing, and predictive modeling."
+  open-graph: true
+
+  navbar:
+    background: light
+    foreground: dark
+    left:
+      - href: index.qmd
+        text: Home
+      - href: software.qmd
+        text: Software
+      - href: about.qmd
+        text: About
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/gs-actuary
+        aria-label: GitHub
+      - icon: youtube
+        href: https://www.youtube.com/@Armchair-Actuary
+        aria-label: YouTube
+
+  page-footer:
+    left: "© 2026 Sollenberger Actuarial Technologies"
+    right: "Open-source actuarial software by Greg Sollenberger, FCAS, CSPA"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+
+execute:
+  freeze: auto

@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ec99a8efe510844151b90c0472fa725a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,6 +74,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Sollenberger Actuarial Technologies">
+<meta property="og:description" content="Open-source actuarial software and technical work in insurance rating, pricing, and predictive modeling.">
+<meta property="og:site_name" content="Sollenberger Actuarial Technologies">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -102,16 +105,24 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./notes.html"> 
-<span class="menu-text">Notes</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/gs-actuary"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@Armchair-Actuary"> <i class="bi bi-youtube" role="img" aria-label="YouTube">
+</i> 
+<span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -147,42 +158,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="actuarial-software-modeling-and-technical-work" class="level2">
-<h2 class="anchored" data-anchor-id="actuarial-software-modeling-and-technical-work">Actuarial software, modeling, and technical work</h2>
-<p>Sollenberger Actuarial Technologies is a home for open-source software and technical work related to insurance rating, predictive modeling, and actuarial workflows.</p>
-<p>The focus is practical: tools that make actuarial work more transparent, reproducible, and easier to move between analytical and production environments.</p>
+<section id="open-source-actuarial-software-for-transparent-reproducible-insurance-work" class="level2 hero">
+<h2 class="anchored" data-anchor-id="open-source-actuarial-software-for-transparent-reproducible-insurance-work">Open-source actuarial software for transparent, reproducible insurance work</h2>
+<p>Sollenberger Actuarial Technologies is a vehicle for publishing open-source software and technical work focused on insurance rating, pricing, predictive modeling, and implementation.</p>
+<p>The goal is practical: make actuarial work easier to understand, test, reproduce, review, and carry into production.</p>
+<p><a href="./software.html" class="btn btn-primary me-2">Explore the software</a> <a href="https://github.com/gs-actuary" class="btn btn-outline-secondary">GitHub</a></p>
 </section>
-<section id="featured-software" class="level2">
-<h2 class="anchored" data-anchor-id="featured-software">Featured software</h2>
-<section id="ratingtables" class="level3">
-<h3 class="anchored" data-anchor-id="ratingtables">ratingtables</h3>
-<p><code>ratingtables</code> is an R package for building transparent and reproducible insurance rating workflows from long-form factor tables.</p>
-<p>It is designed around practical rating needs, including batch rating, traceability, validation, coverage-specific logic, interactions, custom functions, and implementation-oriented workflows.</p>
-<p><a href="https://cran.r-project.org/package=ratingtables">View on CRAN</a></p>
-<p><a href="https://github.com/gs-actuary/ratingtables">View source on GitHub</a></p>
+<section id="actuarial-technology-built-in-the-open" class="level2">
+<h2 class="anchored" data-anchor-id="actuarial-technology-built-in-the-open">Actuarial technology, built in the open</h2>
+<p>The projects published here grow out of recurring actuarial problems: representing complex rating plans clearly, preserving an auditable chain from current to proposed rates, fitting useful predictive models, and making analytical work easier to validate and implement.</p>
+<p>The emphasis is on tools that are:</p>
+<div class="feature-grid">
+<section id="transparent" class="level3 feature-card">
+<h3 class="anchored" data-anchor-id="transparent">Transparent</h3>
+<p>Calculations and model structures should be inspectable rather than hidden behind opaque interfaces.</p>
 </section>
+<section id="reproducible" class="level3 feature-card">
+<h3 class="anchored" data-anchor-id="reproducible">Reproducible</h3>
+<p>Important analytical and rating decisions should be expressible in code, version controlled, and repeatable.</p>
 </section>
-<section id="areas-of-interest" class="level2">
-<h2 class="anchored" data-anchor-id="areas-of-interest">Areas of interest</h2>
+<section id="practical" class="level3 feature-card">
+<h3 class="anchored" data-anchor-id="practical">Practical</h3>
+<p>Software should fit real actuarial workflows, including Excel interaction, implementation review, auditing, and production use.</p>
+</section>
+</div>
+</section>
+<section id="current-projects" class="level2">
+<h2 class="anchored" data-anchor-id="current-projects">Current projects</h2>
+<div class="project-grid">
+<section id="ratingtables" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="ratingtables"><code>ratingtables</code></h3>
+<p>A lightweight, table-driven R rating engine for executing insurance rating plans from normalized factor tables and an ordered calculation specification.</p>
+<p>It supports coverage-specific specifications, entity-level rating and aggregation, rate-set selection, validation, and optional step-by-step calculation traces.</p>
+<p><a href="./software.html#ratingtables">Learn more</a> · <a href="https://github.com/gs-actuary/ratingtables">GitHub</a> · <a href="https://CRAN.R-project.org/package=ratingtables">CRAN</a></p>
+</section>
+<section id="raterevision" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="raterevision"><code>raterevision</code></h3>
+<p>An R package for managing rate-table revisions around a table-driven rating workflow.</p>
+<p>It supports exporting and importing rate tables through Excel as well as programmatic rate changes that preserve a clear record of how proposed rates were produced.</p>
+<p><a href="./software.html#raterevision">Learn more</a> · <a href="https://github.com/gs-actuary/raterevision">GitHub</a> · <a href="https://www.youtube.com/@Armchair-Actuary">Demos</a></p>
+</section>
+<section id="aglmtools" class="level3 project-card">
+<h3 class="anchored" data-anchor-id="aglmtools"><code>aglmtools</code></h3>
+<p>An experimental R project for interpretable regularized generalized linear modeling, including cumulative ordered encodings and actuarial-oriented handling of numeric and categorical predictors.</p>
+<p><a href="./software.html#aglmtools">Learn more</a> · <a href="https://github.com/gs-actuary/aglmtools">GitHub</a></p>
+</section>
+</div>
+</section>
+<section id="technical-focus" class="level2">
+<h2 class="anchored" data-anchor-id="technical-focus">Technical focus</h2>
+<p>The software and technical work here are informed by experience in areas including:</p>
 <ul>
-<li>Insurance pricing and class plan modeling</li>
-<li>GLMs and gradient-boosted models</li>
-<li>Rating implementation and rating-table workflows</li>
-<li>Retention modeling</li>
-<li>Portfolio profitability analysis integrating pricing and retention models</li>
-<li>Model review, documentation, and reproducibility</li>
-<li>Tools that help bridge R-based analytical workflows with business-facing processes</li>
+<li>property and casualty insurance pricing and ratemaking;</li>
+<li>predictive modeling and generalized linear models;</li>
+<li>rating-plan design, implementation, and validation;</li>
+<li>model documentation, governance, and reproducibility;</li>
+<li>retention and profitability modeling;</li>
+<li>R-based actuarial workflows and tooling.</li>
 </ul>
 </section>
-<section id="about" class="level2">
-<h2 class="anchored" data-anchor-id="about">About</h2>
-<p>Greg Sollenberger is a Fellow of the Casualty Actuarial Society (FCAS) and a Certified Specialist in Predictive Analytics (CSPA). He has worked in insurance since 2008 and has more than a decade of experience building predictive models for personal lines insurance.</p>
-<p><a href="./about.html">More about Greg</a></p>
-</section>
-<section id="get-in-touch" class="level2">
-<h2 class="anchored" data-anchor-id="get-in-touch">Get in touch</h2>
-<p>Questions, feedback, ideas for the software, and conversations about related actuarial or technical problems are welcome.</p>
-<p><a href="./contact.html">Contact</a></p>
+<section id="interested-in-using-the-software" class="level2">
+<h2 class="anchored" data-anchor-id="interested-in-using-the-software">Interested in using the software?</h2>
+<p>Feedback from actuaries, analysts, implementation teams, and other users is especially useful. I am happy to discuss the packages, implementation questions, difficult rating structures, modeling problems, or ideas for extending the tools.</p>
+<p><a href="./contact.html" class="btn btn-primary">Get in touch</a></p>
 
 
 </section>
@@ -261,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/sollenbergeractuarial\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -275,6 +313,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -592,13 +635,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© Sollenberger Actuarial Technologies</p>
+<p>© 2026 Sollenberger Actuarial Technologies</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Built with Quarto</p>
+<p>Open-source actuarial software by Greg Sollenberger, FCAS, CSPA</p>
 </div>
   </div>
 </footer>

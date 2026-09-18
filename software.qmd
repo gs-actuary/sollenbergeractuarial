@@ -1,41 +1,94 @@
 ---
 title: "Software"
+description: "Open-source R packages for insurance rating, rate revision, and interpretable actuarial modeling."
 ---
 
-This page collects open-source R tools developed under Sollenberger Actuarial Technologies.
+The projects here are intended to make actuarial work more explicit, testable, reproducible, and portable. They are open source and available on GitHub.
 
-## ratingtables
+## `ratingtables`
 
-`ratingtables` provides tools for transparent, reproducible insurance rating workflows.
+**Table-driven insurance rating in R**
 
-The package is intended for actuaries and analysts who need to move between human-readable rating tables and programmatic rating processes without hiding the mechanics of the calculation.
+`ratingtables` is a lightweight R package for executing insurance rating plans from policy or entity data, normalized factor tables, and an ordered calculation specification.
 
-### Areas of functionality
+Rather than embedding an entire rating plan in product-specific code, the package separates the **rating data**, **rate tables**, and **order of operations**. This makes the mechanics of a plan easier to inspect, version, test, and audit.
 
-- Long-form factor tables
-- Batch rating
-- Rating traces
-- Validation
-- Coverage-specific specifications
-- Interactions
-- Continuous rating variables
-- Custom rating functions
-- Implementation-oriented workflows
+### What it supports
 
-[CRAN package page](https://cran.r-project.org/package=ratingtables)
+- normalized long-form rating-factor tables;
+- ordered additive and multiplicative rating steps;
+- coverage-specific rating specifications;
+- entity-level rating and aggregation;
+- driver or other sub-entity assignment and averaging;
+- interactions and custom calculation stages;
+- rate-set selection using explicit keys or descriptive filters;
+- validation of rating plans, factor tables, and policy data;
+- optional step-by-step trace output for audit and implementation review;
+- efficient batch rating when trace output is not required.
 
-[GitHub repository](https://github.com/)
+`ratingtables` is available on CRAN.
 
-------------------------------------------------------------------------
-
-## Additional projects
-
-More actuarial and modeling tools will be added here as they are released.
-
-```{=html}
-<!-- Suggested future entries:
-- model-to-rating-table tools
-- AGLM / interpretable modeling tools
-- Excel ↔ R actuarial workflow utilities
--->
+```r
+install.packages("ratingtables")
 ```
+
+[GitHub repository](https://github.com/gs-actuary/ratingtables){.btn .btn-primary .me-2}
+[CRAN](https://CRAN.R-project.org/package=ratingtables){.btn .btn-outline-secondary .me-2}
+[Video demo](https://www.youtube.com/@Armchair-Actuary){.btn .btn-outline-secondary}
+
+---
+
+## `raterevision`
+
+**Reproducible workflows for revising insurance rate tables**
+
+`raterevision` is an R package built around the idea that a rate revision should preserve a clear chain from **current rates** to **proposed rates**.
+
+It provides tools for working with rate tables outside the rating engine itself: exporting tables for review or editing, importing them back into R, applying programmatic changes, and evaluating the effect of those changes using `ratingtables`.
+
+A revision can therefore be expressed as a readable sequence of changes rather than only as a final collection of replacement tables.
+
+### Typical workflow
+
+1. Start with the current rating tables.
+2. Export selected tables to Excel when manual review or editing is useful.
+3. Apply rate changes either programmatically or through an import workflow.
+4. Use `ratingtables` to rate current and proposed plans.
+5. Measure overall and segment-level effects.
+6. Preserve the code and resulting tables as a reproducible record of the revision.
+
+`raterevision` is currently available from GitHub and is not yet on CRAN.
+
+```r
+install.packages("pak")
+pak::pkg_install("gs-actuary/raterevision")
+```
+
+The Armchair Actuary YouTube channel includes three demonstrations of `raterevision`.
+
+[GitHub repository](https://github.com/gs-actuary/raterevision){.btn .btn-primary .me-2}
+[Watch the demos](https://www.youtube.com/@Armchair-Actuary){.btn .btn-outline-secondary}
+
+---
+
+## `aglmtools`
+
+**Experimental tools for interpretable regularized GLMs**
+
+`aglmtools` is a development-stage R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.
+
+The project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.
+
+This project is less mature than `ratingtables` and `raterevision`; the GitHub repository is the best place to follow its current development.
+
+[GitHub repository](https://github.com/gs-actuary/aglmtools){.btn .btn-primary}
+
+---
+
+## Demonstrations and discussion
+
+The [Armchair Actuary YouTube channel](https://www.youtube.com/@Armchair-Actuary) contains demonstrations of the rating and rate-revision tools.
+
+If you are experimenting with one of these packages—or working through a rating or modeling problem that exposes a limitation in them—I welcome feedback and discussion.
+
+[Contact me](contact.qmd)
