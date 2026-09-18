@@ -1,11 +1,15 @@
+# R / RStudio local state
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Quarto local cache/state
 .quarto/
+
+# OS junk
 .DS_Store
 Thumbs.db
 
 /.quarto/
 **/*.quarto_ipynb
-
-.Rproj.user/
-.Rhistory
-.RData
-.Ruserdata

@@ -73,9 +73,9 @@ The Armchair Actuary YouTube channel includes three demonstrations of `raterevis
 
 ## `aglmtools`
 
-**Experimental tools for interpretable regularized GLMs**
+**Development-stage tools for interpretable regularized GLMs**
 
-`aglmtools` is a development-stage R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.
+`aglmtools` is an R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.
 
 The project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.
 

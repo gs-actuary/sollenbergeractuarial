@@ -25,7 +25,7 @@ Current projects include:
 
 - [`ratingtables`](software.qmd#ratingtables), a table-driven insurance rating engine;
 - [`raterevision`](software.qmd#raterevision), tools for reproducible rate-table revision workflows; and
-- [`aglmtools`](software.qmd#aglmtools), an experimental project for interpretable regularized GLMs.
+- [`aglmtools`](software.qmd#aglmtools), a development-stage project for interpretable regularized GLMs.
 
 I am particularly interested in feedback from people trying to use these tools on real rating structures and implementation workflows. Practical edge cases are often the most useful source of ideas for improving the software.
 

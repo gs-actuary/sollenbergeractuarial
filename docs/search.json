@@ -25,7 +25,7 @@
     "href": "software.html#aglmtools",
     "title": "Software",
     "section": "aglmtools",
-    "text": "aglmtools\nExperimental tools for interpretable regularized GLMs\naglmtools is a development-stage R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.\nThe project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.\nThis project is less mature than ratingtables and raterevision; the GitHub repository is the best place to follow its current development.\nGitHub repository"
+    "text": "aglmtools\nDevelopment-stage tools for interpretable regularized GLMs\naglmtools is an R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.\nThe project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.\nThis project is less mature than ratingtables and raterevision; the GitHub repository is the best place to follow its current development.\nGitHub repository"
   },
   {
     "objectID": "software.html#demonstrations-and-discussion",
@@ -81,7 +81,7 @@
     "href": "about.html#open-source-work",
     "title": "About",
     "section": "Open-source work",
-    "text": "Open-source work\nCurrent projects include:\n\nratingtables, a table-driven insurance rating engine;\nraterevision, tools for reproducible rate-table revision workflows; and\naglmtools, an experimental project for interpretable regularized GLMs.\n\nI am particularly interested in feedback from people trying to use these tools on real rating structures and implementation workflows. Practical edge cases are often the most useful source of ideas for improving the software."
+    "text": "Open-source work\nCurrent projects include:\n\nratingtables, a table-driven insurance rating engine;\nraterevision, tools for reproducible rate-table revision workflows; and\naglmtools, a development-stage project for interpretable regularized GLMs.\n\nI am particularly interested in feedback from people trying to use these tools on real rating structures and implementation workflows. Practical edge cases are often the most useful source of ideas for improving the software."
   },
   {
     "objectID": "about.html#elsewhere",
@@ -116,7 +116,7 @@
     "href": "index.html#current-projects",
     "title": "Sollenberger Actuarial Technologies",
     "section": "Current projects",
-    "text": "Current projects\n\n\nratingtables\nA lightweight, table-driven R rating engine for executing insurance rating plans from normalized factor tables and an ordered calculation specification.\nIt supports coverage-specific specifications, entity-level rating and aggregation, rate-set selection, validation, and optional step-by-step calculation traces.\nLearn more · GitHub · CRAN\n\n\nraterevision\nAn R package for managing rate-table revisions around a table-driven rating workflow.\nIt supports exporting and importing rate tables through Excel as well as programmatic rate changes that preserve a clear record of how proposed rates were produced.\nLearn more · GitHub · Demos\n\n\naglmtools\nAn experimental R project for interpretable regularized generalized linear modeling, including cumulative ordered encodings and actuarial-oriented handling of numeric and categorical predictors.\nLearn more · GitHub"
+    "text": "Current projects\n\n\nratingtables\nA lightweight, table-driven R rating engine for executing insurance rating plans from normalized factor tables and an ordered calculation specification.\nIt supports coverage-specific specifications, entity-level rating and aggregation, rate-set selection, validation, and optional step-by-step calculation traces.\nLearn more · GitHub · CRAN\n\n\nraterevision\nAn R package for managing rate-table revisions around a table-driven rating workflow.\nIt supports exporting and importing rate tables through Excel as well as programmatic rate changes that preserve a clear record of how proposed rates were produced.\nLearn more · GitHub · Demos\n\n\naglmtools\nA development-stage R project for interpretable regularized generalized linear modeling, including cumulative ordered encodings and actuarial-oriented handling of numeric and categorical predictors.\nLearn more · GitHub"
   },
   {
     "objectID": "index.html#technical-focus",
