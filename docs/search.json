@@ -25,14 +25,14 @@
     "href": "software.html#aglmtools",
     "title": "Software",
     "section": "aglmtools",
-    "text": "aglmtools\nDevelopment-stage tools for interpretable regularized GLMs\naglmtools is an R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.\nThe project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.\nThis project is less mature than ratingtables and raterevision; the GitHub repository is the best place to follow its current development.\nGitHub repository"
+    "text": "aglmtools\nDevelopment-stage tools for interpretable regularized GLMs\naglmtools is an R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.\nThe project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.\nThis project is less mature than ratingtables, actuarialfitdist, and raterevision; the GitHub repository is the best place to follow its current development.\nGitHub repository"
   },
   {
     "objectID": "software.html#demonstrations-and-discussion",
     "href": "software.html#demonstrations-and-discussion",
     "title": "Software",
     "section": "Demonstrations and discussion",
-    "text": "Demonstrations and discussion\nThe Armchair Actuary YouTube channel contains demonstrations of the rating and rate-revision tools.\nIf you are experimenting with one of these packages—or working through a rating or modeling problem that exposes a limitation in them—I welcome feedback and discussion.\nContact me"
+    "text": "Demonstrations and discussion\nThe Armchair Actuary YouTube channel contains demonstrations of the rating and rate-revision tools.\nIf you are experimenting with one of these packages—or working through a rating, severity, or modeling problem that exposes a limitation in them—I welcome feedback and discussion.\nContact me"
   },
   {
     "objectID": "contact.html",
@@ -93,43 +93,50 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Sollenberger Actuarial Technologies",
+    "title": "Sollenberger Actuarial Technologies, LLC",
     "section": "",
     "text": "Sollenberger Actuarial Technologies is a vehicle for publishing open-source software and technical work focused on insurance rating, pricing, predictive modeling, and implementation.\nThe goal is practical: make actuarial work easier to understand, test, reproduce, review, and carry into production.\nExplore the software GitHub"
   },
   {
     "objectID": "index.html#open-source-actuarial-software-for-transparent-reproducible-insurance-work",
     "href": "index.html#open-source-actuarial-software-for-transparent-reproducible-insurance-work",
-    "title": "Sollenberger Actuarial Technologies",
+    "title": "Sollenberger Actuarial Technologies, LLC",
     "section": "",
     "text": "Sollenberger Actuarial Technologies is a vehicle for publishing open-source software and technical work focused on insurance rating, pricing, predictive modeling, and implementation.\nThe goal is practical: make actuarial work easier to understand, test, reproduce, review, and carry into production.\nExplore the software GitHub"
   },
   {
     "objectID": "index.html#actuarial-technology-built-in-the-open",
     "href": "index.html#actuarial-technology-built-in-the-open",
-    "title": "Sollenberger Actuarial Technologies",
+    "title": "Sollenberger Actuarial Technologies, LLC",
     "section": "Actuarial technology, built in the open",
     "text": "Actuarial technology, built in the open\nThe projects published here grow out of recurring actuarial problems: representing complex rating plans clearly, preserving an auditable chain from current to proposed rates, fitting useful predictive models, and making analytical work easier to validate and implement.\nThe emphasis is on tools that are:\n\n\nTransparent\nCalculations and model structures should be inspectable rather than hidden behind opaque interfaces.\n\n\nReproducible\nImportant analytical and rating decisions should be expressible in code, version controlled, and repeatable.\n\n\nPractical\nSoftware should fit real actuarial workflows, including Excel interaction, implementation review, auditing, and production use."
   },
   {
     "objectID": "index.html#current-projects",
     "href": "index.html#current-projects",
-    "title": "Sollenberger Actuarial Technologies",
+    "title": "Sollenberger Actuarial Technologies, LLC",
     "section": "Current projects",
     "text": "Current projects\n\n\nratingtables\nA lightweight, table-driven R rating engine for executing insurance rating plans from normalized factor tables and an ordered calculation specification.\nIt supports coverage-specific specifications, entity-level rating and aggregation, rate-set selection, validation, and optional step-by-step calculation traces.\nLearn more · GitHub · CRAN\n\n\nraterevision\nAn R package for managing rate-table revisions around a table-driven rating workflow.\nIt supports exporting and importing rate tables through Excel as well as programmatic rate changes that preserve a clear record of how proposed rates were produced.\nLearn more · GitHub · Demos\n\n\naglmtools\nA development-stage R project for interpretable regularized generalized linear modeling, including cumulative ordered encodings and actuarial-oriented handling of numeric and categorical predictors.\nLearn more · GitHub"
   },
   {
     "objectID": "index.html#technical-focus",
     "href": "index.html#technical-focus",
-    "title": "Sollenberger Actuarial Technologies",
+    "title": "Sollenberger Actuarial Technologies, LLC",
     "section": "Technical focus",
     "text": "Technical focus\nThe software and technical work here are informed by experience in areas including:\n\nproperty and casualty insurance pricing and ratemaking;\npredictive modeling and generalized linear models;\nrating-plan design, implementation, and validation;\nmodel documentation, governance, and reproducibility;\nretention and profitability modeling;\nR-based actuarial workflows and tooling."
   },
   {
     "objectID": "index.html#interested-in-using-the-software",
     "href": "index.html#interested-in-using-the-software",
-    "title": "Sollenberger Actuarial Technologies",
+    "title": "Sollenberger Actuarial Technologies, LLC",
     "section": "Interested in using the software?",
     "text": "Interested in using the software?\nFeedback from actuaries, analysts, implementation teams, and other users is especially useful. I am happy to discuss the packages, implementation questions, difficult rating structures, modeling problems, or ideas for extending the tools.\nGet in touch"
+  },
+  {
+    "objectID": "software.html#actuarialfitdist",
+    "href": "software.html#actuarialfitdist",
+    "title": "Software",
+    "section": "actuarialfitdist",
+    "text": "actuarialfitdist\nActuarial severity distribution fitting with limits and deductibles\nactuarialfitdist is an R package for fitting claim severity distributions and translating those fits into insurance rating factors.\nUnlike general-purpose distribution fitting tools, the package explicitly accounts for deductible truncation, policy-limit censoring, and severity scaling in the fitting process. This allows analysts to estimate ground-up claim severity distributions from insurance loss data observed under different policy terms.\nThe package connects statistical severity modeling with practical ratemaking applications, including the calculation of increased limits factors, deductible factors, and other loss-cost adjustments.\n\nWhat it supports\n\nmaximum-likelihood fitting with deductible truncation and policy-limit censoring;\ncommon actuarial severity distributions, including lognormal, Weibull, gamma, Burr, Pareto II, and generalized Pareto;\nseverity scaling using coverage amounts, insured values, or other numerical variables;\nobservation weights and fixed distribution parameters;\ncomparison of candidate distributions using likelihood, information criteria, and diagnostic plots;\nspliced body-tail distributions with fixed or optimized thresholds;\nlimited expected values and loss elimination ratios;\nincreased limits factors, deductible factors, and combined rating factors;\nvaluation and depreciation adjustments;\ngoodness-of-fit diagnostics, simulation, and uncertainty estimation;\ncustomizable visualizations and access to underlying plotting data.\n\n\n\nTypical workflow\n\nStart with ground-up claim severity data, including applicable deductibles and limits.\nFit one or more candidate severity distributions.\nCompare fitted models using statistical diagnostics and their implications for rating factors.\nCalculate limited expected values, increased limits factors, or deductible factors.\nEvaluate the sensitivity of the resulting factors to distribution choice and model assumptions.\n\nThe package is designed to support both statistical model evaluation and the practical application of severity models in insurance pricing.\nactuarialfitdist is available on CRAN.\ninstall.packages(\"actuarialfitdist\")\nGitHub repository CRAN"
   }
 ]

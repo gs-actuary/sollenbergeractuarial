@@ -1,5 +1,5 @@
 ---
-title: "Sollenberger Actuarial Technologies"
+title: "Sollenberger Actuarial Technologies, LLC"
 page-layout: full
 title-block-banner: false
 ---

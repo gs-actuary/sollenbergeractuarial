@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Open-source R packages for insurance rating, rate revision, and interpretable actuarial modeling.">
+<meta name="description" content="Open-source R packages for insurance rating, rate revision, severity modeling, and interpretable actuarial modeling.">
 
-<title>Software – Sollenberger Actuarial Technologies</title>
+<title>Software – Sollenberger Actuarial Technologies, LLC</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -75,10 +78,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ec99a8efe510844151b90c0472fa725a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-450c2eee02a231721e0cefa83b2ac8cc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -110,9 +113,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Software – Sollenberger Actuarial Technologies">
-<meta property="og:description" content="Open-source R packages for insurance rating, rate revision, and interpretable actuarial modeling.">
-<meta property="og:site_name" content="Sollenberger Actuarial Technologies">
+<meta property="og:title" content="Software – Sollenberger Actuarial Technologies, LLC">
+<meta property="og:description" content="Open-source R packages for insurance rating, rate revision, severity modeling, and interpretable actuarial modeling.">
+<meta property="og:site_name" content="Sollenberger Actuarial Technologies, LLC">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -123,7 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Sollenberger Actuarial Technologies</span>
+    <span class="navbar-title">Sollenberger Actuarial Technologies, LLC</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -182,7 +185,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    Open-source R packages for insurance rating, rate revision, and interpretable actuarial modeling.
+    Open-source R packages for insurance rating, rate revision, severity modeling, and interpretable actuarial modeling.
   </div>
 </div>
 
@@ -225,14 +228,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 </section>
 </section>
+<section id="actuarialfitdist" class="level2">
+<h2 class="anchored" data-anchor-id="actuarialfitdist"><code>actuarialfitdist</code></h2>
+<p><strong>Actuarial severity distribution fitting with limits and deductibles</strong></p>
+<p><code>actuarialfitdist</code> is an R package for fitting claim severity distributions and translating those fits into insurance rating factors.</p>
+<p>Unlike general-purpose distribution fitting tools, the package explicitly accounts for <strong>deductible truncation</strong>, <strong>policy-limit censoring</strong>, and <strong>severity scaling</strong> in the fitting process. This allows analysts to estimate ground-up claim severity distributions from insurance loss data observed under different policy terms.</p>
+<p>The package connects statistical severity modeling with practical ratemaking applications, including the calculation of increased limits factors, deductible factors, and other loss-cost adjustments.</p>
+<section id="what-it-supports-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-supports-1">What it supports</h3>
+<ul>
+<li>maximum-likelihood fitting with deductible truncation and policy-limit censoring;</li>
+<li>common actuarial severity distributions, including lognormal, Weibull, gamma, Burr, Pareto II, and generalized Pareto;</li>
+<li>severity scaling using coverage amounts, insured values, or other numerical variables;</li>
+<li>observation weights and fixed distribution parameters;</li>
+<li>comparison of candidate distributions using likelihood, information criteria, and diagnostic plots;</li>
+<li>spliced body-tail distributions with fixed or optimized thresholds;</li>
+<li>limited expected values and loss elimination ratios;</li>
+<li>increased limits factors, deductible factors, and combined rating factors;</li>
+<li>valuation and depreciation adjustments;</li>
+<li>goodness-of-fit diagnostics, simulation, and uncertainty estimation;</li>
+<li>customizable visualizations and access to underlying plotting data.</li>
+</ul>
+</section>
+<section id="typical-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="typical-workflow">Typical workflow</h3>
+<ol type="1">
+<li>Start with ground-up claim severity data, including applicable deductibles and limits.</li>
+<li>Fit one or more candidate severity distributions.</li>
+<li>Compare fitted models using statistical diagnostics and their implications for rating factors.</li>
+<li>Calculate limited expected values, increased limits factors, or deductible factors.</li>
+<li>Evaluate the sensitivity of the resulting factors to distribution choice and model assumptions.</li>
+</ol>
+<p>The package is designed to support both statistical model evaluation and the practical application of severity models in insurance pricing.</p>
+<p><code>actuarialfitdist</code> is available on CRAN.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"actuarialfitdist"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><a href="https://github.com/gs-actuary/actuarialfitdist" class="btn btn-primary me-2">GitHub repository</a> <a href="https://CRAN.R-project.org/package=actuarialfitdist" class="btn btn-outline-secondary">CRAN</a></p>
+<hr>
+</section>
+</section>
 <section id="raterevision" class="level2">
 <h2 class="anchored" data-anchor-id="raterevision"><code>raterevision</code></h2>
 <p><strong>Reproducible workflows for revising insurance rate tables</strong></p>
 <p><code>raterevision</code> is an R package built around the idea that a rate revision should preserve a clear chain from <strong>current rates</strong> to <strong>proposed rates</strong>.</p>
 <p>It provides tools for working with rate tables outside the rating engine itself: exporting tables for review or editing, importing them back into R, applying programmatic changes, and evaluating the effect of those changes using <code>ratingtables</code>.</p>
 <p>A revision can therefore be expressed as a readable sequence of changes rather than only as a final collection of replacement tables.</p>
-<section id="typical-workflow" class="level3">
-<h3 class="anchored" data-anchor-id="typical-workflow">Typical workflow</h3>
+<section id="typical-workflow-1" class="level3">
+<h3 class="anchored" data-anchor-id="typical-workflow-1">Typical workflow</h3>
 <ol type="1">
 <li>Start with the current rating tables.</li>
 <li>Export selected tables to Excel when manual review or editing is useful.</li>
@@ -242,8 +283,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Preserve the code and resulting tables as a reproducible record of the revision.</li>
 </ol>
 <p><code>raterevision</code> is currently available from GitHub and is not yet on CRAN.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"pak"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pkg_install</span>(<span class="st">"gs-actuary/raterevision"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"pak"</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pak<span class="sc">::</span><span class="fu">pkg_install</span>(<span class="st">"gs-actuary/raterevision"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The Armchair Actuary YouTube channel includes three demonstrations of <code>raterevision</code>.</p>
 <p><a href="https://github.com/gs-actuary/raterevision" class="btn btn-primary me-2">GitHub repository</a> <a href="https://www.youtube.com/@Armchair-Actuary" class="btn btn-outline-secondary">Watch the demos</a></p>
 <hr>
@@ -254,14 +295,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Development-stage tools for interpretable regularized GLMs</strong></p>
 <p><code>aglmtools</code> is an R project exploring actuarial applications of regularized generalized linear models with interpretable feature transformations.</p>
 <p>The project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.</p>
-<p>This project is less mature than <code>ratingtables</code> and <code>raterevision</code>; the GitHub repository is the best place to follow its current development.</p>
+<p>This project is less mature than <code>ratingtables</code>, <code>actuarialfitdist</code>, and <code>raterevision</code>; the GitHub repository is the best place to follow its current development.</p>
 <p><a href="https://github.com/gs-actuary/aglmtools" class="btn btn-primary">GitHub repository</a></p>
 <hr>
 </section>
 <section id="demonstrations-and-discussion" class="level2">
 <h2 class="anchored" data-anchor-id="demonstrations-and-discussion">Demonstrations and discussion</h2>
 <p>The <a href="https://www.youtube.com/@Armchair-Actuary">Armchair Actuary YouTube channel</a> contains demonstrations of the rating and rate-revision tools.</p>
-<p>If you are experimenting with one of these packages—or working through a rating or modeling problem that exposes a limitation in them—I welcome feedback and discussion.</p>
+<p>If you are experimenting with one of these packages—or working through a rating, severity, or modeling problem that exposes a limitation in them—I welcome feedback and discussion.</p>
 <p><a href="./contact.html">Contact me</a></p>
 
 
@@ -677,7 +718,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2026 Sollenberger Actuarial Technologies</p>
+<p>© 2026 Sollenberger Actuarial Technologies, LLC</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

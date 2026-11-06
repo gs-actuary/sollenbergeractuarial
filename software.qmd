@@ -1,6 +1,7 @@
+
 ---
 title: "Software"
-description: "Open-source R packages for insurance rating, rate revision, and interpretable actuarial modeling."
+description: "Open-source R packages for insurance rating, rate revision, severity modeling, and interpretable actuarial modeling."
 ---
 
 The projects here are intended to make actuarial work more explicit, testable, reproducible, and portable. They are open source and available on GitHub.
@@ -35,6 +36,51 @@ install.packages("ratingtables")
 [GitHub repository](https://github.com/gs-actuary/ratingtables){.btn .btn-primary .me-2}
 [CRAN](https://CRAN.R-project.org/package=ratingtables){.btn .btn-outline-secondary .me-2}
 [Video demo](https://www.youtube.com/@Armchair-Actuary){.btn .btn-outline-secondary}
+
+---
+
+## `actuarialfitdist`
+
+**Actuarial severity distribution fitting with limits and deductibles**
+
+`actuarialfitdist` is an R package for fitting claim severity distributions and translating those fits into insurance rating factors.
+
+Unlike general-purpose distribution fitting tools, the package explicitly accounts for **deductible truncation**, **policy-limit censoring**, and **severity scaling** in the fitting process. This allows analysts to estimate ground-up claim severity distributions from insurance loss data observed under different policy terms.
+
+The package connects statistical severity modeling with practical ratemaking applications, including the calculation of increased limits factors, deductible factors, and other loss-cost adjustments.
+
+### What it supports
+
+- maximum-likelihood fitting with deductible truncation and policy-limit censoring;
+- common actuarial severity distributions, including lognormal, Weibull, gamma, Burr, Pareto II, and generalized Pareto;
+- severity scaling using coverage amounts, insured values, or other numerical variables;
+- observation weights and fixed distribution parameters;
+- comparison of candidate distributions using likelihood, information criteria, and diagnostic plots;
+- spliced body-tail distributions with fixed or optimized thresholds;
+- limited expected values and loss elimination ratios;
+- increased limits factors, deductible factors, and combined rating factors;
+- valuation and depreciation adjustments;
+- goodness-of-fit diagnostics, simulation, and uncertainty estimation;
+- customizable visualizations and access to underlying plotting data.
+
+### Typical workflow
+
+1. Start with ground-up claim severity data, including applicable deductibles and limits.
+2. Fit one or more candidate severity distributions.
+3. Compare fitted models using statistical diagnostics and their implications for rating factors.
+4. Calculate limited expected values, increased limits factors, or deductible factors.
+5. Evaluate the sensitivity of the resulting factors to distribution choice and model assumptions.
+
+The package is designed to support both statistical model evaluation and the practical application of severity models in insurance pricing.
+
+`actuarialfitdist` is available on CRAN.
+
+```r
+install.packages("actuarialfitdist")
+```
+
+[GitHub repository](https://github.com/gs-actuary/actuarialfitdist){.btn .btn-primary .me-2}
+[CRAN](https://CRAN.R-project.org/package=actuarialfitdist){.btn .btn-outline-secondary}
 
 ---
 
@@ -79,7 +125,7 @@ The Armchair Actuary YouTube channel includes three demonstrations of `raterevis
 
 The project includes cumulative ordered encodings inspired by Accurate GLM approaches, elastic-net estimation, and tools for handling common actuarial predictor structures such as ordered numeric variables and categorical effects.
 
-This project is less mature than `ratingtables` and `raterevision`; the GitHub repository is the best place to follow its current development.
+This project is less mature than `ratingtables`, `actuarialfitdist`, and `raterevision`; the GitHub repository is the best place to follow its current development.
 
 [GitHub repository](https://github.com/gs-actuary/aglmtools){.btn .btn-primary}
 
@@ -89,6 +135,6 @@ This project is less mature than `ratingtables` and `raterevision`; the GitHub r
 
 The [Armchair Actuary YouTube channel](https://www.youtube.com/@Armchair-Actuary) contains demonstrations of the rating and rate-revision tools.
 
-If you are experimenting with one of these packages—or working through a rating or modeling problem that exposes a limitation in them—I welcome feedback and discussion.
+If you are experimenting with one of these packages—or working through a rating, severity, or modeling problem that exposes a limitation in them—I welcome feedback and discussion.
 
 [Contact me](contact.qmd)

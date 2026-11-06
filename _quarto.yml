@@ -5,7 +5,7 @@ project:
     - CNAME
 
 website:
-  title: "Sollenberger Actuarial Technologies"
+  title: "Sollenberger Actuarial Technologies, LLC"
   site-url: "https://sollenbergeractuarial.com"
   description: "Open-source actuarial software and technical work in insurance rating, pricing, and predictive modeling."
   open-graph: true
@@ -31,7 +31,7 @@ website:
         aria-label: YouTube
 
   page-footer:
-    left: "© 2026 Sollenberger Actuarial Technologies"
+    left: "© 2026 Sollenberger Actuarial Technologies, LLC"
     right: "Open-source actuarial software by Greg Sollenberger, FCAS, CSPA"
 
 format:
